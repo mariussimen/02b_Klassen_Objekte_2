@@ -6,10 +6,10 @@ public class Cat
 //  Felder / fields / attributes
 
 // pass by reference
-   String name = "Grizabella";
-   String furcolor = "white";
-//    pass by value
-   int age = 29;
+   String name ;
+   String furcolor;
+
+   int age ;//    pass by value
 
     // Rückgabetyp -- Cat
     public Cat getInstanceVariable(){

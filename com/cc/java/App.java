@@ -10,19 +10,33 @@ public class App {
         // cat --> Referenzvariable
         // Cat --> Referenztyp(Klasse)
         Cat cat = new Cat();
-        output("Blick von aussen: " + cat);
-        output("Blick von innen: " + cat.getInstanceVariable());
-        output(cat.name);
-        output(cat.furcolor);
-        // Explizite Typumwandlung
-        output(Integer.toString(cat.age) );
+        // output("Blick von aussen: " + cat);
+        // output("Blick von innen: " + cat.getInstanceVariable());
+        // output(cat.name);
+        // output(cat.furcolor);
+        // // Explizite Typumwandlung
+        // output(Integer.toString(cat.age) );
 
 
         System.out.println("----------------------------");
 
-    //     Cat cat2 = new Cat();
-    //     output("Blick von aussen: " + cat2);
-    //     output("Blick von innen: " + cat2.getInstanceVariable());
+        Cat cat2 = new Cat();
+        output("Blick von aussen: " + cat2);
+        output("Blick von innen: " + cat2.getInstanceVariable());
+
+          // Werte setzen
+          cat2.name = "Alonzo";
+          cat2.furcolor = "grey";
+          cat2.age = 35;
+  
+  
+          // Werte ausgeben
+          output(cat2.name);
+          output(cat2.furcolor);
+          output(Integer.toString(cat2.age)); // Explizite Typumwandlung
+  
+  
+  
 
     }
 
