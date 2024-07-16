@@ -12,11 +12,14 @@ public class App {
         Cat cat = new Cat("Griabella","white",29);
         output("Blick von aussen: " + cat);
         output("Blick von innen: " + cat.getInstanceVariable());
-        output(cat.name);
-        output(cat.furcolor);
+        output(cat.getName());
+        output(cat.getFurcolor());
         // Explizite Typumwandlung
-        output(Integer.toString(cat.age) );
+        output(Integer.toString(cat.getAge()));
 
+        // cat.furcolor = "grey";
+        // output(cat.furcolor);
+       
 
         System.out.println("----------------------------");
 
@@ -29,11 +32,12 @@ public class App {
   
   
           // Werte ausgeben
-          output(cat2.name);
-          output(cat2.furcolor);
-          output(Integer.toString(cat2.age)); // Explizite Typumwandlung
+          output(cat2.getName());
+          output(cat2.getFurcolor());
+          output(Integer.toString(cat2.getAge())); // Explizite Typumwandlung
     
-          
+          cat2.setAge(36);
+          output(Integer.toString(cat2.getAge()));
   
   
 
